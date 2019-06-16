@@ -1,0 +1,18 @@
+<!--pages/picture.wxml-->
+<view class="picture-view">
+  <!--<text>这个页面是照片浏览页面</text>-->
+  <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoPlay}}' interval='{{interval}}' circular="{{circular}}">
+    <swiper-item>
+      <image src="../images/2008.jpg" mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../images/2009.jpg" mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../images/2010.jpg" mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../images/2011.jpg" mode="aspectFit"></image>
+    </swiper-item>
+  </swiper>
+</view>

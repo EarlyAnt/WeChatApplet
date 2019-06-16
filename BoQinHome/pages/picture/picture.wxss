@@ -1,0 +1,10 @@
+/* pages/picture.wxss */
+
+.picture-view swiper {
+  width: 100%;
+  height: 350rpx;
+}
+
+.picture-view swiper image {
+  width: 100%;
+}

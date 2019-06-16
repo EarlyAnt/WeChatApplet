@@ -1,0 +1,39 @@
+/*
+  样式的使用：
+  1.如果需要动态改变样式，使用行内样式
+  2.小程序对弹性盒子支持非常好，建议使用
+  3.rpx相当于rem
+*/
+
+.homePage-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homePage-view .logo {
+  width: 256rpx;
+  height: 256rpx;
+  margin-top: 160rpx;
+}
+
+.homePage-view .welcome {
+  margin-top: 40rpx;
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.homePage-view .button-view {
+  margin-top: 100rpx;
+  border: 1px solid #109d59;
+  width: 400rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  text-align: center;
+  line-height:80rpx;
+  padding: 5px 10px;
+}
+
+.homePage-view .button-view text {
+  color: #109d59;
+}

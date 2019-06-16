@@ -1,0 +1,7 @@
+<view class="homePage-view">
+  <image class="logo" src="../images/logo.png"></image>
+  <text class="welcome">欢迎来到卜卜芹芹的星球</text>
+  <view class="button-view" bindtap="transfer">
+    <text class="text">时光荏苒，岁月如梭</text>
+  </view>
+</view>
