@@ -3,16 +3,16 @@
   <!--<text>这个页面是照片浏览页面</text>-->
   <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoPlay}}' interval='{{interval}}' circular="{{circular}}">
     <swiper-item>
-      <image src="../images/2008.jpg" mode="aspectFit"></image>
+      <image src="https://earlyant.github.io/WeChatApplet/BoQinHome/pages/images/2008.JPG" mode="aspectFit"></image>
     </swiper-item>
     <swiper-item>
-      <image src="../images/2009.jpg" mode="aspectFit"></image>
+      <image src="https://earlyant.github.io/WeChatApplet/BoQinHome/pages/images/2009.JPG" mode="aspectFit"></image>
     </swiper-item>
     <swiper-item>
-      <image src="../images/2010.jpg" mode="aspectFit"></image>
+      <image src="https://earlyant.github.io/WeChatApplet/BoQinHome/pages/images/2010.JPG" mode="aspectFit"></image>
     </swiper-item>
     <swiper-item>
-      <image src="../images/2011.jpg" mode="aspectFit"></image>
+      <image src="https://earlyant.github.io/WeChatApplet/BoQinHome/pages/images/2011.JPG" mode="aspectFit"></image>
     </swiper-item>
   </swiper>
 </view>
