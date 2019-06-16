@@ -15,4 +15,21 @@
       <image src="https://earlyant.github.io/WeChatApplet/BoQinHome/pages/images/2011.JPG" mode="aspectFit"></image>
     </swiper-item>
   </swiper>
+
+  <view class="news-view">
+    <view>
+      <image class="user-portrait" src="../images/girl.png"></image>
+      <text class="user-name">qinqin</text>
+      <text class="date">2019/06/17</text>
+    </view>
+    <text class="news-title">岁月不老，一世倾城</text>
+    <image class="news-image" src="../images/scenery3.jpg"></image>
+    <text class="news-text">岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城岁月不老，一世倾城</text>
+    <view class="comments-view">
+      <image class="comments-icon" src="../images/赞.png"></image>
+      <text class="comments-text">128</text>
+      <image class="comments-icon" src="../images/评论.png"></image>
+      <text class="comments-text">64</text>
+    </view>
+  </view>
 </view>

@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/homePage/homePage",
     "pages/picture/picture",
+    "pages/homePage/homePage",
+    
     "pages/index/index"
   ],
   "window": {
