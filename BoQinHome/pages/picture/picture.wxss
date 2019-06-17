@@ -3,8 +3,95 @@
 .picture-view swiper {
   width: 100%;
   height: 350rpx;
+  border-bottom: 1px solid #ededed;
 }
 
 .picture-view swiper image {
   width: 100%;
+}
+
+.news-view {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+  background-color: #fff;
+  border-top: 1px solid #ededed;
+  padding: 10px;
+  padding-bottom: 5px;
+}
+
+.user-view {
+  vertical-align: middle;
+  line-height: 72rpx;
+}
+
+.user-portrait {
+  width: 72rpx;
+  height: 72rpx;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+
+.user-name {
+  width: fit-content;
+  height: 36rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  font-size: 26rpx;
+}
+
+.date {
+  width: fit-content;
+  height: 36rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  font-size: 26rpx;
+}
+
+.news-title {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.news-image {
+  width: 96%;
+  height: 400rpx;
+  margin: auto, 0;
+  margin-top: 20rpx;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.news-text {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  letter-spacing: 6rpx;
+}
+
+.comments-view {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  width: 100%;
+}
+
+.comments-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+
+.comments-text {
+  font-size: 26rpx;
+  margin-left: 10prx;
+  margin-right: 20rpx;
+  margin-top: 4rpx;
+  margin-bottom: 4rpx;
 }
