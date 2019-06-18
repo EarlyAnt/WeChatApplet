@@ -1,4 +1,6 @@
 <!--pages/picture.wxml-->
+<import src="template/pictureTemplate.wxml" />
+
 <view class="picture-view">
   <!--<text>这个页面是照片浏览页面</text>-->
   <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoPlay}}' interval='{{interval}}' circular="{{circular}}">
@@ -17,21 +19,6 @@
   </swiper>
 
   <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
-    <view class="news-view">
-      <view class="user-view">
-        <image class="user-portrait" src="{{item.userPortrait}}"></image>
-        <text class="user-name">{{item.userName}}</text>
-        <text class="date">{{item.date}}</text>
-      </view>
-      <text class="news-title">{{item.newsTitle}}</text>
-      <image class="news-image" src="{{item.newsImage}}"></image>
-      <text class="news-text">{{item.newsText}}</text>
-      <view class="comments-view">
-        <image class="comments-icon" src="../images/like2.png"></image>
-        <text class="comments-text">{{item.likeCount}}</text>
-        <image class="comments-icon" src="../images/comment2.png"></image>
-        <text class="comments-text">{{item.commentCount}}</text>
-      </view>
-    </view>
+    <template is="pictureTemplate" data="{{...item}}" />
   </block>
 </view>

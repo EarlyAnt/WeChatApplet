@@ -1,0 +1,18 @@
+<template name="pictureTemplate">
+  <view class="news-view">
+      <view class="user-view">
+        <image class="user-portrait" src="{{userPortrait}}"></image>
+        <text class="user-name">{{userName}}</text>
+        <text class="date">{{date}}</text>
+      </view>
+      <text class="news-title">{{newsTitle}}</text>
+      <image class="news-image" src="{{newsImage}}"></image>
+      <text class="news-text">{{newsText}}</text>
+      <view class="comments-view">
+        <image class="comments-icon" src="../images/like2.png"></image>
+        <text class="comments-text">{{likeCount}}</text>
+        <image class="comments-icon" src="../images/comment2.png"></image>
+        <text class="comments-text">{{commentCount}}</text>
+      </view>
+    </view>
+</template>
