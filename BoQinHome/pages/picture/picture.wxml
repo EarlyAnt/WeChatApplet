@@ -16,36 +16,22 @@
     </swiper-item>
   </swiper>
 
-  <view class="news-view">
-    <view class="user-view">
-      <image class="user-portrait" src="{{useData[0].userPortrait}}"></image>
-      <text class="user-name">{{useData[0].userName}}</text>
-      <text class="date">{{useData[0].date}}</text>
+  <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
+    <view class="news-view">
+      <view class="user-view">
+        <image class="user-portrait" src="{{item.userPortrait}}"></image>
+        <text class="user-name">{{item.userName}}</text>
+        <text class="date">{{item.date}}</text>
+      </view>
+      <text class="news-title">{{item.newsTitle}}</text>
+      <image class="news-image" src="{{item.newsImage}}"></image>
+      <text class="news-text">{{item.newsText}}</text>
+      <view class="comments-view">
+        <image class="comments-icon" src="../images/like2.png"></image>
+        <text class="comments-text">{{item.likeCount}}</text>
+        <image class="comments-icon" src="../images/comment2.png"></image>
+        <text class="comments-text">{{item.commentCount}}</text>
+      </view>
     </view>
-    <text class="news-title">{{useData[0].newsTitle}}</text>
-    <image class="news-image" src="{{useData[0].newsImage}}"></image>
-    <text class="news-text">{{useData[0].newsText}}</text>
-    <view class="comments-view">
-      <image class="comments-icon" src="../images/like2.png"></image>
-      <text class="comments-text">{{useData[0].likeCount}}</text>
-      <image class="comments-icon" src="../images/comment2.png"></image>
-      <text class="comments-text">{{useData[0].commentCount}}</text>
-    </view>
-  </view>
-  <view class="news-view">
-    <view class="user-view">
-      <image class="user-portrait" src="{{useData[1].userPortrait}}"></image>
-      <text class="user-name">{{useData[1].userName}}</text>
-      <text class="date">{{useData[1].date}}</text>
-    </view>
-    <text class="news-title">{{useData[1].newsTitle}}</text>
-    <image class="news-image" src="{{useData[1].newsImage}}"></image>
-    <text class="news-text">{{useData[1].newsText}}</text>
-    <view class="comments-view">
-      <image class="comments-icon" src="../images/like2.png"></image>
-      <text class="comments-text">{{useData[1].likeCount}}</text>
-      <image class="comments-icon" src="../images/comment2.png"></image>
-      <text class="comments-text">{{useData[1].commentCount}}</text>
-    </view>
-  </view>
+  </block>
 </view>
