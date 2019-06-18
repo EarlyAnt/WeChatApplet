@@ -30,10 +30,19 @@
   height: 80rpx;
   border-radius: 5px;
   text-align: center;
-  line-height:80rpx;
+  line-height: 80rpx;
   padding: 5px 10px;
 }
 
 .homePage-view .button-view text {
   color: #109d59;
+}
+
+.version-view {
+  margin-top: 200rpx;
+}
+
+.version {
+  font-size: 24rpx;
+  text-decoration-line: underline;
 }

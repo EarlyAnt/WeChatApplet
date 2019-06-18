@@ -4,4 +4,7 @@
   <view class="button-view" bindtap="transfer">
     <text class="text">时光荏苒，岁月如梭</text>
   </view>
+  <view class="version-view">
+    <text class="version">v1.0.10</text>
+  </view>
 </view>
