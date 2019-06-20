@@ -60,6 +60,7 @@
   margin-left: 20rpx;
   margin-right: 20rpx;
   letter-spacing: 6rpx;
+  text-indent:1.8rem;
 }
 
 .comments-view {

@@ -19,6 +19,8 @@
   </swiper>
 
   <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
-    <template is="pictureTemplate" data="{{...item}}" />
+    <view bindtap="transfer" data-id="{{item.id}}">
+      <template is="pictureTemplate" data="{{...item}}" />
+    </view>
   </block>
 </view>

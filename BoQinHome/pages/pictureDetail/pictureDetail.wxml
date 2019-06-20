@@ -1,0 +1,16 @@
+<!--pages/pictureDetail/pictureDetail.wxml-->
+<view class="mian-view">
+  <image class="cover" src="{{useData.newsImage}}"></image>
+  <view class="author-view">
+    <image class="user-portrait" src="{{useData.userPortrait}}"></image>
+    <text class="user-name">{{useData.userName}}</text>
+    <text class="publish-date" space='nbsp'>发表于 {{useData.date}}</text>
+    <image class="ear-phone" src="../images/earPhone.png"></image>
+  </view>
+  <text class="title">{{useData.newsTitle}}</text>  
+  <text class="article">{{useData.newsText}}</text>
+  <view class="comments-view">
+    <image class="like-icon" src="../images/like2.png"></image>
+    <image class="comments-icon" src="../images/comment2.png"></image>
+  </view>
+</view>

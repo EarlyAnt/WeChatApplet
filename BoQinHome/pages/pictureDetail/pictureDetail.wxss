@@ -1,0 +1,79 @@
+/* pages/pictureDetail/pictureDetail.wxss */
+
+.mian-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cover {
+  width: 100%;
+}
+
+.author-view {
+  margin-top: 20rpx;
+  vertical-align: middle;
+  line-height: 64rpx;
+}
+
+.user-portrait {
+  width: 64rpx;
+  height: 64rpx;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+
+.user-name {
+  margin-left: 20rpx;
+  font-size: 32rpx;
+}
+
+.publish-date {
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  color: rgb(187, 185, 185);
+}
+
+.ear-phone {
+  margin-left: 20rpx;
+  vertical-align: middle;
+  width: 72rpx;
+  height: 72rpx;
+}
+
+.title {
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  width: 100%;
+  font-size: 48rpx;
+}
+
+.comments-view {
+  margin-top: 20rpx;
+  width: 100%;
+  vertical-align: middle;
+  line-height: 64rpx;
+  text-align: right;
+}
+
+.like-icon {
+  margin-right:20rpx;
+  width: 42rpx;
+  height: 42rpx;
+  vertical-align: middle;
+}
+
+.comments-icon {
+  margin-right:30rpx;
+  width: 42rpx;
+  height: 42rpx;
+  vertical-align: middle;
+}
+
+.article {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  letter-spacing: 6rpx;
+  text-indent:2.4rem;
+}
