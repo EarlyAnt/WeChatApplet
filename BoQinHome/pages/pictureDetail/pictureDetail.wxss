@@ -56,10 +56,10 @@
   text-align: right;
 }
 
-.like-icon {
+.storage-icon {
   margin-right:20rpx;
-  width: 42rpx;
-  height: 42rpx;
+  width: 48rpx;
+  height: 48rpx;
   vertical-align: middle;
 }
 

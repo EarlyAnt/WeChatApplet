@@ -10,7 +10,8 @@
   <text class="title">{{useData.newsTitle}}</text>  
   <text class="article">{{useData.newsText}}</text>
   <view class="comments-view">
-    <image class="like-icon" src="../images/like2.png"></image>
+    <image class="storage-icon" wx:if="{{storaged}}" src="../images/storage2.png" catchtap='storageTap'></image>
+    <image class="storage-icon" wx:else src="../images/storage.png" catchtap='storageTap'></image>
     <image class="comments-icon" src="../images/comment2.png"></image>
   </view>
 </view>

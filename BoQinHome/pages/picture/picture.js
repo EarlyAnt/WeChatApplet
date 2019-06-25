@@ -73,8 +73,8 @@ Page({
   },
 
   transfer: function(event) {
-    console.log(event);
-    console.log(event.currentTarget.dataset.id);
+    //console.log(event);
+    //console.log(event.currentTarget.dataset.id);
     wx.navigateTo({
       url: '../pictureDetail/pictureDetail?id='+event.currentTarget.dataset.id
     })
