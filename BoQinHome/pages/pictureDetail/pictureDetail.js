@@ -23,31 +23,38 @@ Page({
 
     //wx.clearStorageSync();
 
-    this.setData({//设置当前文章ID
+    this.setData({ //设置当前文章ID
       articleid: options.id
     });
 
     var articlesStorage = wx.getStorageSync("articlesStorage");
-    if (!articlesStorage) {//如果之前没有存储过数据，先初始化数据(数组的第一个元素为false)
+    if (!articlesStorage) { //如果之前没有存储过数据，先初始化数据(数组的第一个元素为false)
       var articlesStorage = {};
       articlesStorage[this.data.articleid] = false;
       wx.setStorageSync("articlesStorage", articlesStorage);
     }
 
-    this.setData({//设置是否以收藏
+    this.setData({ //设置是否以收藏
       storaged: articlesStorage[this.data.articleid]
     });
 
     console.log("articlesStorage_" + this.data.articleid + ", " + this.data.storaged);
   },
 
-  storageTap: function(event) {//详情页点击收藏按钮时，未收藏则收藏，已收藏则取消
+  storageTap: function(event) { //详情页点击收藏按钮时，未收藏则收藏，已收藏则取消
     var articlesStorage = wx.getStorageSync("articlesStorage");
     articlesStorage[this.data.articleid] = !articlesStorage[this.data.articleid];
     wx.setStorageSync("articlesStorage", articlesStorage);
 
-    this.setData({//设置数据，驱动页面更新
+    this.setData({ //设置数据，驱动页面更新
       storaged: articlesStorage[this.data.articleid]
+    });
+
+    wx.showToast({
+      title: this.data.storaged ? "收藏成功" : "取消收藏",
+      icon: 'success',
+      duration: 800,
+      mask: true
     });
   },
 
