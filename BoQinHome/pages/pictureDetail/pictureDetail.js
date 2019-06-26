@@ -39,6 +39,8 @@ Page({
     });
 
     console.log("articlesStorage_" + this.data.articleid + ", " + this.data.storaged);
+
+    this.playMusic();
   },
 
   storageTap: function(event) { //详情页点击收藏按钮时，未收藏则收藏，已收藏则取消
@@ -50,12 +52,39 @@ Page({
       storaged: articlesStorage[this.data.articleid]
     });
 
+    /*
+    //显示提示框
     wx.showToast({
       title: this.data.storaged ? "收藏成功" : "取消收藏",
       icon: 'success',
       duration: 800,
       mask: true
     });
+    */
+
+    /*
+    //显示自定义条目提示框
+    wx.showActionSheet({
+      itemList: ['分享到微信', '分享到微博', '分享到QQ'],
+      success: function(res) {
+        console.log(res.tapIndex);
+      },
+      fail: function(res) {
+        console.log(res.errMsg);
+      }
+    });
+    */
+  },
+
+  playMusic: function() {
+    //console.log(event);
+    //console.log(this.data.useData);
+    const backgroundAudioManager = wx.getBackgroundAudioManager();
+    backgroundAudioManager.title = 'Unknown'
+    backgroundAudioManager.epname = 'Unknown'
+    backgroundAudioManager.singer = 'Unknown'
+    backgroundAudioManager.coverImgUrl = '/pages/images/Moonlight Shadow.jpg'
+    backgroundAudioManager.src = this.data.useData.backgroundMusic
   },
 
   /**
@@ -83,7 +112,8 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function() {
-
+    const backgroundAudioManager = wx.getBackgroundAudioManager();
+    backgroundAudioManager.stop();
   },
 
   /**
@@ -103,7 +133,14 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
-
+  onShareAppMessage: function(res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    };
+    return {
+      title: pageData.datas[this.data.articleid].newsTitle,
+      path: '/pages/pictureDetail/pictureDetail?id=' + this.data.articleid
+    };
   }
 })

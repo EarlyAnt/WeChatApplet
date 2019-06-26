@@ -7,7 +7,7 @@
       </view>
       <text class="news-title">{{newsTitle}}</text>
       <image class="news-image" src="{{newsImage}}"></image>
-      <text class="news-text">{{newsText}}</text>
+      <text class="news-text">{{digest}}</text>
       <view class="comments-view">
         <image class="comments-icon" src="../images/like2.png"></image>
         <text class="comments-text">{{likeCount}}</text>
