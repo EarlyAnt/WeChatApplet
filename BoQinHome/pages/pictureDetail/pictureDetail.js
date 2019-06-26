@@ -80,11 +80,11 @@ Page({
     //console.log(event);
     //console.log(this.data.useData);
     const backgroundAudioManager = wx.getBackgroundAudioManager();
-    backgroundAudioManager.title = 'Unknown'
+    backgroundAudioManager.title = this.data.useData.backgroundMusic.title
     backgroundAudioManager.epname = 'Unknown'
     backgroundAudioManager.singer = 'Unknown'
-    backgroundAudioManager.coverImgUrl = '/pages/images/Moonlight Shadow.jpg'
-    backgroundAudioManager.src = this.data.useData.backgroundMusic
+    backgroundAudioManager.coverImgUrl = this.data.useData.backgroundMusic.coverImage
+    backgroundAudioManager.src = this.data.useData.backgroundMusic.url
   },
 
   /**
