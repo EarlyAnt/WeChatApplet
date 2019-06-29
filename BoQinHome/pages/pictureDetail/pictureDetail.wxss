@@ -58,8 +58,8 @@
 
 .storage-icon {
   margin-right:20rpx;
-  width: 48rpx;
-  height: 48rpx;
+  width: 42rpx;
+  height: 42rpx;
   vertical-align: middle;
 }
 
