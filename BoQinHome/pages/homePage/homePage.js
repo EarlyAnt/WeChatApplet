@@ -50,8 +50,13 @@ Page({
   },
   transfer: function (event) { 
     console.log("跳转页面");
+    /*
     wx.navigateTo({
       url: '../picture/picture'
     });
+    */
+    wx:wx.switchTab({
+      url: '../picture/picture',
+    })
   }
 })

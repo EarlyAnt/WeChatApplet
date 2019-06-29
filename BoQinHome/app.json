@@ -2,8 +2,8 @@
   "pages": [
     "pages/homePage/homePage",
     "pages/picture/picture",
-    "pages/pictureDetail/pictureDetail",    
-    "pages/index/index"
+    "pages/pictureDetail/pictureDetail",
+    "pages/versionLog/versionLog"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,6 +11,28 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "color": "#a9b7b7",    
+    "selectedColor": "#11cd6e",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/picture/picture",
+        "text": "故事",
+        "iconPath": "pages/images/pictureNormal.png",
+        "selectedIconPath": "pages/images/pictureSelected.png"
+      },
+      {
+        "pagePath": "pages/versionLog/versionLog",
+        "text": "日志",
+        "iconPath": "pages/images/logNormal.png",
+        "selectedIconPath": "pages/images/logSelected.png"
+      }
+    ]
+  },
   "sitemapLocation": "sitemap.json",
-  "requiredBackgroundModes": ["audio"]
+  "requiredBackgroundModes": [
+    "audio"
+  ]
 }
